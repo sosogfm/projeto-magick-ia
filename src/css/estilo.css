@@ -140,3 +140,20 @@ body{
     text-align: center;
     text-decoration: none;
 }
+
+.rodape{
+    background-color:#6528d3;
+    display: flex;
+    justify-content: center;
+    color: #ededed;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.esconder{
+    display: none;
+}
+
+.mostrar{
+    display: block;
+}
