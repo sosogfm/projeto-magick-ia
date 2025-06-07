@@ -51,6 +51,7 @@ body{
     background-color: #f2eefa;
     color: #130234;
     height: 52px;
+    
 }
 
 .container select:focus, 
@@ -60,9 +61,39 @@ body{
     outline: none;
 }
 
-.container .categoria {
+.select-wrapper {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+}
+
+.categoria {
     appearance: none;
-    background: url(../imagens/seta-para-baixo.png) 97% center no-repeat;
+    width: 100%;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.seta {
+  display: inline-block;
+  position: absolute;
+  top: 55%;
+  right: 11px;        
+  width: 11px;
+  height: 11px;
+  background-image: url('../imagens/seta-para-baixo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  transform-origin: left top;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+
+.categoria:focus + .seta {
+ transform: translateY(-50%)  rotate(90deg);
 }
 
 .container .filtros .btn-filtrar{
