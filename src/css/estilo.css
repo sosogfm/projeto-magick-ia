@@ -44,6 +44,12 @@ body{
     color: #6528d3;
 }
 
+.preco-cartas{
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #6528d3;
+}
+
 .container .categorias-cartas select, .container .preco-cartas input{
     padding: 16px 13px;
     border-radius: 2px;
@@ -51,7 +57,6 @@ body{
     background-color: #f2eefa;
     color: #130234;
     height: 52px;
-    
 }
 
 .container select:focus, 
@@ -67,13 +72,15 @@ body{
     display: inline-block;
 }
 
+
 .categoria {
     appearance: none;
     width: 100%;
     padding: 0.5rem 2rem 0.5rem 1rem;
     background-color: #fff;
     border: 1px solid #ccc;
-    font-size: 1rem;
+    font-size: 15px;
+ 
 }
 
 .seta {
@@ -87,7 +94,7 @@ body{
   background-size: contain;
   background-repeat: no-repeat;
   transform: translateY(-50%);
-  transform-origin: left top;
+  transform-origin: center;
   transition: transform 0.3s ease;
   pointer-events: none;
 }
